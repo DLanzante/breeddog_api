@@ -26,7 +26,7 @@ If project has been improved after submission, here is a good place to specify i
 2. Import 
 3. Sync 
 
-Or use <a href="https://github.com/DLanzante/Dog-Breed-API-Lab/tree/main" target="_blank">`This File`</a> by <a href="https://github.com/DLanzante/Dog-Breed-API-Lab" target="_blank">@DLanzante</a>
+Or use <a href="https://github.com/DLanzante/breeddog_api/tree/main" target="_blank">`This File`</a> by <a href="https://github.com/DLanzante/breeddog_api" target="_blank">@DLanzante</a>
 
 <h2>Contributing</h2>
 Mention pull requests. Link to an example and/or put it down here
