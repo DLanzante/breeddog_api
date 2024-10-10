@@ -5,6 +5,6 @@
     "\\breeddog_api\\breeddog_api",
     "\\breeddog_api\\dogapi"
   ],
-  "SelectedNode": "\\breeddog_api\\dogapi\\models.py",
+  "SelectedNode": "\\breeddog_api\\breeddog_api\\urls.py",
   "PreviewInSolutionExplorer": false
 }
