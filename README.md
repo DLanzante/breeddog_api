@@ -1,5 +1,5 @@
 <h1 align="center">Dominic Lanzante DJango Dog / Breed API Lab</h1>
-<p align="center"><strong>In this project the author is going to build a new Django application with two API endpoints. The first allows the end user to create a new `Dog` model by making a to `api/dogs`.</strong>
+<p align="center"><strong>In this project the author is going to build a new Django application with API endpoints.</strong>
 <br>Comment</p>
 <br/>
 <div align="center"><img src="demo.gif"></img></div>
@@ -26,7 +26,7 @@ If project has been improved after submission, here is a good place to specify i
 2. Import 
 3. Sync 
 
-Or use <a href="https://github.com/DLanzante/breeddog_api/tree/main" target="_blank">`This File`</a> by <a href="https://github.com/DLanzante/breeddog_api" target="_blank">@DLanzante</a>
+Or use <a href="https://github.com/DLanzante/breeddog_api/tree/master" target="_blank">`This File`</a> by <a href="https://github.com/DLanzante/breeddog_api/master" target="_blank">@DLanzante</a>
 
 <h2>Contributing</h2>
 Mention pull requests. Link to an example and/or put it down here
@@ -42,4 +42,4 @@ Insert here
 - Any material
 
 <h2>Copyright</h2>
-This project is licensed under the terms of the MIT license and protected by Udacity Honor Code and Community Code of Conduct. See <a href="LICENSE.md">license</a> and <a href="LICENSE.DISCLAIMER.md">disclaimer</a>.
+This project is licensed under the terms of the UNO license and protected by UNO Honor Code and Community Code of Conduct. See <a href="https://github.com/DLanzante">license</a> and <a href="https://github.com/DLanzante">disclaimer</a>.
