@@ -125,6 +125,7 @@ This is probably the best (and easiest approach)
 In either case:
 
 > add the appropriate url patterns to the urls.py file to accept all of the patterns and map them to the correct controller
+
 > test your endpoints with POSTMAN, taking screenshots of each type of request. There should be 5 requests total for each type of model, for a total of 10 tests and screenshots.
 > GET (list), POST to /api/dogs/
 > GET, PUT, DELETE to /api/dogs/<id>
