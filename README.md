@@ -33,7 +33,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">This is not only a README Template but this is my Code Repo as well!</h3>
 
   <p align="center">
     This is an awesome README template to jumpstart your projects! I would recommend this to anyone starting github projects!
