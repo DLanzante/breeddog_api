@@ -127,9 +127,13 @@ In either case:
 > add the appropriate url patterns to the urls.py file to accept all of the patterns and map them to the correct controller
 
 > test your endpoints with POSTMAN, taking screenshots of each type of request. There should be 5 requests total for each type of model, for a total of 10 tests and screenshots.
+
 > GET (list), POST to /api/dogs/
+
 > GET, PUT, DELETE to /api/dogs/<id>
+
 > GET (list), POST to /api/breeds/
+
 > GET, PUT, DELETE to /api/breeds/<id>
 
 10 bonus points: Commit your code and save the version number (make sure to link to this commit in your submission below). Now rework your API to use the other type of (class based views or viewsets). Save your changes and provide an additional link to your repository state using the alternative approach.
