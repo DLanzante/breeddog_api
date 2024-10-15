@@ -30,7 +30,10 @@
 <br />
 <div align="center">
 
-  <h3 align="center">This is not only a README Template but this is my Code Repo as well!</h3>
+  <h3 align="center">This is not only a README Template but this is my Code Repo as well!
+  <br />
+    <a href="https://github.com/DLanzante/breeddog_api/"><strong>Explore My Code »</strong></a>
+    <br /></h3>
 
   <p align="center">
     This is an awesome README template to jumpstart your projects! I would recommend this to anyone starting github projects!
