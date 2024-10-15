@@ -85,14 +85,64 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Specification
+You should build a new Django Application with two API endpoints. The first endpoint allows an end user to create a new Dog model by making a POST to /api/dogs, view current dogs that have been saved to the server before by making a GET to /api/dogs, and get, modify, or delete an existing Dog record by making a GET, PUT, or DELETE request (respectively) to /api/dogs/<id> where <id> is the id of the Dog record to be retrieved, modified, or deleted. Since a Dog includes a foreign key to the breed, you also need to make the same type of endpoints for dog breed at /api/breeds/ and /api/breeds/<id>.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Dog model
+A dog should contain the following fields:
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+name (a character string)
+age (an integer)
+breed (a foreign key to the Breed Model)
+gender (a character string)
+color (a character string)
+favoritefood (a character string)
+favoritetoy (a character string)
+Breed Model
+A breed should contain the following fields:
+
+name (a character string)
+size (a character string) [should accept Tiny, Small, Medium, Large]
+friendliness (an integer field) [should accept values from 1-5]
+trainability (an integer field) [should accept values from 1-5]
+sheddingamount (an integer field) [should accept values from 1-5]
+exerciseneeds (an integer field) [should accept values from 1-5]
+Todo List
+To do this, do the following:
+
+track all of your changes using github. 
+create a new repository on github following these instructions: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repositoryLinks to an external site.
+Using a local file folder, call git init
+in that folder create a new django server like we did in the labs
+create a new app in your django server called dogapi
+add a Dog and Breed models to models.py
+migrate your database to include tables for Dog and Breed
+
+Do one of the following:
+
+Use class-based views
+add two class-based API view controllers for handling Dog REST endpoints to controllers.py
+call one DogDetail and one DogList to conform to best practice nomenclature
+The DogDetail class should have three methods named get, put, delete
+The DogList class should have two methods named get and post
+refer to http://www.django-rest-framework.org/tutorial/3-class-based-views/Links to an external site. for examples
+add a two class-based API view controllers for handling Breed REST endpoints to controllers.py
+call one BreedDetail and one BreedList to conform to best practice nomenclature
+The BreedDetail class should have three methods named get, put, delete
+The BreedList class should have two methods named get and post
+refer to http://www.django-rest-framework.org/tutorial/3-class-based-views/Links to an external site. for examples
+use viewsets (one for breed and one for dogs)
+This is probably the best (and easiest approach)
+
+In either case:
+
+add the appropriate url patterns to the urls.py file to accept all of the patterns and map them to the correct controller
+test your endpoints with POSTMAN, taking screenshots of each type of request. There should be 5 requests total for each type of model, for a total of 10 tests and screenshots.
+GET (list), POST to /api/dogs/
+GET, PUT, DELETE to /api/dogs/<id>
+GET (list), POST to /api/breeds/
+GET, PUT, DELETE to /api/breeds/<id>
+10 bonus points: Commit your code and save the version number (make sure to link to this commit in your submission below). Now rework your API to use the other type of (class based views or viewsets). Save your changes and provide an additional link to your repository state using the alternative approach.
 
 Use the `BLANK_README.md` to get started.
 
@@ -184,22 +234,6 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ### Top contributors:
 
 <a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
@@ -222,9 +256,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Your Name - [](https://github.com/DLanzante/breeddog_api) - DLanzante Github Repo
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/DLanzante/breeddog_api]([https://github.com/DLanzante/breeddog_api])
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -232,18 +266,6 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
